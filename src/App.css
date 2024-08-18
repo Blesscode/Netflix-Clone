@@ -1,0 +1,6 @@
+* {
+  margin: 0; /*Get rid of full screen extra margin*/
+}
+.app {
+  background-color: #111;
+}

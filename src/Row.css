@@ -1,0 +1,30 @@
+.row {
+  margin-left: 20px; /*provide gap to heading*/
+  color: #fff;
+}
+.row_containers {
+  display: flex; /*vertical to horizontal*/
+  overflow-y: hidden; /*Keep it fix in y axis with no scroll*/
+  overflow-x: scroll; /*Add scroll option in x axis*/
+  padding: 20px; /*provide spcae at starting and end of each container*/
+}
+.row_containers::-webkit-scrollbar {
+  display: none; /*Hiding scrollbar but keeping scroll prop*/
+}
+.row_container {
+  object-fit: contain; /*container */
+  max-height: 100px; /*max height*/
+  width: 100%; /*max screen L-R width i.e. one l-R line = 1 img*/
+  margin-right: 10px;
+  transition: transform 450ms; /*smooth in and out of cards*/
+}
+
+.row_container:hover {
+  transform: scale(1.08); /*In and out of cards*/
+}
+.row_containerLarge {
+  max-height: 250px;
+}
+.row_containerLarge:hover {
+  transform: scale(1.09); /*In and out of cards*/
+}
